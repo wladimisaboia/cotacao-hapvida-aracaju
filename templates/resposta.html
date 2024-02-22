@@ -18,7 +18,7 @@
         {% if valores %}
         <div class="beneficios">
           <h3>Benefícios do plano {{ plano_selecionado }}:</h3>
-          {% if plano_selecionado == 'nosso plano enfermaria (pessoa física) - Coparticipação parcial' or plano_selecionado == 'nosso plano enfermaria (pessoa física) - Com coparticipação' or plano_selecionado == 'nosso plano apartamento (pessoa física) - Coparticipação parcial' or plano_selecionado == 'nosso plano apartamento (pessoa física) - Com coparticipação'%}
+          {% if plano_selecionado == 'nosso plano enfermaria (pessoa física) - Sem coparticipação, exceto terapias' or plano_selecionado == 'nosso plano enfermaria (pessoa física) - Com coparticipação' or plano_selecionado == 'nosso plano apartamento (pessoa física) - Sem coparticipação, exceto terapias' or plano_selecionado == 'nosso plano apartamento (pessoa física) - Com coparticipação'%}
           <ul>
             <li><span>Urgência e emergência</span></li>
             <li><span>Consultas</span></li>
@@ -27,7 +27,7 @@
             <li><span>Internações</span></li>
             <li><span>Cirurgias</span></li>
           </ul>
-          {% elif plano_selecionado == 'mix enfermaria (pessoa física) - Coparticipação parcial' or plano_selecionado == 'mix apartamento (pessoa física) - Coparticipação parcial'%}
+          {% elif plano_selecionado == 'mix enfermaria (pessoa física) - Sem coparticipação, exceto terapias' or plano_selecionado == 'mix apartamento (pessoa física) - Sem coparticipação, exceto terapias'%}
           <ul>
             <li><span>Urgência e emergência</span></li>
             <li><span>Consultas</span></li>
@@ -37,7 +37,7 @@
             <li><span>Cirurgias</span></li>
             <li><span>Rede credenciada</span></li>
           </ul>
-          {% elif plano_selecionado == 'ambulatorial (pessoa física) - Coparticipação parcial' or plano_selecionado == 'ambulatorial (pessoa física) - Com coparticipação' or plano_selecionado == 'ambulatorial (pessoa jurídica) - Coparticipação parcial' or plano_selecionado == 'ambulatorial (pessoa jurídica) - Com coparticipação'%}
+          {% elif plano_selecionado == 'ambulatorial (pessoa física) - Sem coparticipação, exceto terapias' or plano_selecionado == 'ambulatorial (pessoa física) - Com coparticipação' or plano_selecionado == 'ambulatorial (pessoa jurídica) - Sem coparticipação, exceto terapias' or plano_selecionado == 'ambulatorial (pessoa jurídica) - Com coparticipação'%}
           <ul>
             <li><span>Urgência e emergência</span></li>
             <li><span>Consultas</span></li>
@@ -46,7 +46,7 @@
             <li class="no-mark"><span>Internações</span></li>
             <li class="no-mark"><span>Cirurgias</span></li>
           </ul>
-          {% elif plano_selecionado == 'enfermaria (pessoa jurídica) - Coparticipação parcial' or plano_selecionado == 'enfermaria (pessoa jurídica) - Com coparticipação' or plano_selecionado == 'apartamento (pessoa jurídica) - Coparticipação parcial' or plano_selecionado == 'apartamento (pessoa jurídica) - Com coparticipação'%}
+          {% elif plano_selecionado == 'enfermaria (pessoa jurídica) - Sem coparticipação, exceto terapias' or plano_selecionado == 'enfermaria (pessoa jurídica) - Com coparticipação' or plano_selecionado == 'apartamento (pessoa jurídica) - Sem coparticipação, exceto terapias' or plano_selecionado == 'apartamento (pessoa jurídica) - Com coparticipação'%}
           <ul>
             <li><span>Urgência e emergência</span></li>
             <li><span>Consultas</span></li>
