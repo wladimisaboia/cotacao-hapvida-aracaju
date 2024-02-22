@@ -19,12 +19,12 @@ def cotar():
     for idade in idades:
         valor = 0
 
-        if plano == 'ambulatorial (pessoa física) - Coparticipação parcial' or plano == 'ambulatorial (pessoa física) - Com coparticipação' or plano == 'nosso plano enfermaria (pessoa física) - Coparticipação parcial' or plano == 'nosso plano enfermaria (pessoa física) - Com coparticipação' or plano == 'nosso plano apartamento (pessoa física) - Coparticipação parcial' or plano == 'nosso plano apartamento (pessoa física) - Com coparticipação' or plano == 'mix enfermaria (pessoa física) - Coparticipação parcial' or plano == 'mix apartamento (pessoa física) - Coparticipação parcial':
+        if plano == 'ambulatorial (pessoa física) - Sem coparticipação, exceto terapias' or plano == 'ambulatorial (pessoa física) - Com coparticipação' or plano == 'nosso plano enfermaria (pessoa física) - Sem coparticipação, exceto terapias' or plano == 'nosso plano enfermaria (pessoa física) - Com coparticipação' or plano == 'nosso plano apartamento (pessoa física) - Sem coparticipação, exceto terapias' or plano == 'nosso plano apartamento (pessoa física) - Com coparticipação' or plano == 'mix enfermaria (pessoa física) - Sem coparticipação, exceto terapias' or plano == 'mix apartamento (pessoa física) - Sem coparticipação, exceto terapias':
             if len(idades) >= 2 and not desconto_aplicado:
                 valor = valor * 0.95
                 desconto_aplicado = True
 
-        if plano == 'ambulatorial (pessoa física) - Coparticipação parcial':
+        if plano == 'ambulatorial (pessoa física) - Sem coparticipação, exceto terapias':
             if idade <= 18:
                 valor = 168.97
             elif idade <= 23:
@@ -66,7 +66,7 @@ def cotar():
                 valor = 486.05
             else:
                 valor = 630.81
-        elif plano == 'nosso plano enfermaria (pessoa física) - Coparticipação parcial':
+        elif plano == 'nosso plano enfermaria (pessoa física) - Sem coparticipação, exceto terapias':
             if idade <= 18:
                 valor = 234.95
             elif idade <= 23:
@@ -108,7 +108,7 @@ def cotar():
                 valor = 763.99
             else:
                 valor = 992.13
-        elif plano == 'nosso plano apartamento (pessoa física) - Coparticipação parcial':
+        elif plano == 'nosso plano apartamento (pessoa física) - Sem coparticipação, exceto terapias':
             if idade <= 18:
                 valor = 350.65
             elif idade <= 23:
@@ -150,7 +150,7 @@ def cotar():
                 valor = 1144.21
             else:
                 valor = 1486.41
-        elif plano == 'mix enfermaria (pessoa física) - Coparticipação parcial':
+        elif plano == 'mix enfermaria (pessoa física) - Sem coparticipação, exceto terapias':
             if idade <= 18:
                 valor = 386.83
             elif idade <= 23:
@@ -171,7 +171,7 @@ def cotar():
                 valor = 1760.89
             else:
                 valor = 2288.10
-        elif plano == 'mix apartamento (pessoa física) - Coparticipação parcial':
+        elif plano == 'mix apartamento (pessoa física) - Sem coparticipação, exceto terapias':
             if idade <= 18:
                 valor = 578.44
             elif idade <= 23:
@@ -192,7 +192,7 @@ def cotar():
                 valor = 2639.43
             else:
                 valor = 3430.20
-        elif plano == 'enfermaria (pessoa jurídica) - Coparticipação parcial':
+        elif plano == 'enfermaria (pessoa jurídica) - Sem coparticipação, exceto terapias':
             if idade <= 18:
                 valor = 210.77
             elif idade <= 23:
@@ -234,7 +234,7 @@ def cotar():
                 valor = 618.94
             else:
                 valor = 693.21
-        elif plano == 'apartamento (pessoa jurídica) - Coparticipação parcial':
+        elif plano == 'apartamento (pessoa jurídica) - Sem coparticipação, exceto terapias':
             if idade <= 18:
                 valor = 284.01
             elif idade <= 23:
